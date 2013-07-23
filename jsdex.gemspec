@@ -22,4 +22,7 @@ on the browser to return search results.}
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "minitest"
+  spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "simplecov"
 end
