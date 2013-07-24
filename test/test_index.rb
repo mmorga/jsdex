@@ -12,7 +12,6 @@ class TestIndexer < MiniTest::Test
   end
 
   def test_that_it_indexed_a_word_for_matching_documents
-    assert_equal 7, @indexer.documents("people").length
     expected_docs = Set.new([
       "test/docs/2013-01-01-a-day-his-see-me-come-many-from-if-of-just-other.md",
       "test/docs/2013-01-02-some-have-a-which-on.md",

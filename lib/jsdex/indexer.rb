@@ -18,6 +18,7 @@ module Jsdex
             files = Dir.glob(search_path)
             @files_indexed = files.length
             # TODO: refactor this to its own class
+            # Need to support diff importers for HTML, Markdown, Jekyll front matter, etc.
             files.each do |file|
                 File.open(file).readlines.each do |line|
                     line.split(/[\s[[:punct:]]]/).uniq.each do |word|
@@ -28,6 +29,7 @@ module Jsdex
                     end
                 end
             end
+            # TODO: Output should be exported as a JSON file (but not here)
         end
 
         def initialize

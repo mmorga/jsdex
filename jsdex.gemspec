@@ -25,4 +25,6 @@ on the browser to return search results.}
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "coveralls"
   spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "guard"
+  spec.add_development_dependency "guard-minitest"
 end
